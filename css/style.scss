@@ -1,0 +1,99 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;    
+}
+
+body{
+  background-color: #dff9fb;  
+}
+
+// Card for middle position
+
+@mixin Middle-position {
+ width: 400px;
+ height: 200px;
+ background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  
+ position: absolute;
+ left: 0px;
+ right: 0px;
+ top: 0px;
+ bottom: 0px;
+ margin: auto;
+ border-radius: 5px;
+}
+
+
+// this is Display Card 
+.Card-wrapper{
+    @include Middle-position();
+   }
+   
+
+
+
+// Sass Condition for Screen
+
+@mixin Screen ($Value){
+    
+    @if $Value ==XX-Large{
+      .Card-wrapper{
+        @include Middle-position();
+      }  
+    }
+    @else if $Value==X-Large{
+        .Card-wrapper{
+            background-image: linear-gradient(to right top, #051937, #3b225a, #7e1667, #bf0058, #eb122e);
+        }
+    }
+    @else if $Value ==Large{
+        .Card-wrapper{
+            background-image: linear-gradient(to right top, #052137, #002c68, #00339a, #0031c7, #2512eb);
+        }
+    }
+    @else if $Value ==Medium{
+        .Card-wrapper{
+            background-image: linear-gradient(to bottom, #eeff39, #00f486, #00d7da, #00afff, #127aeb);
+        }
+    }
+    @else if $Value ==Small{
+        .Card-wrapper{
+            background-image: linear-gradient(to left top, #e50a87, #ec3250, #da5e1e, #b88000, #8c9800, #75a82a, #54b74d, #00c472, #00d395, #13e1b7, #3aeed5, #5ffbf1);
+        }
+    }
+   
+}
+
+
+
+// This is for XX-Large
+@media only screen and (max-width: 1320px) {
+    @include Screen(XX-Large)
+
+  }
+
+// This is for X-Large
+  @media only screen and (max-width: 1140px) {
+    @include Screen(X-Large)
+
+  }
+
+// This is for Large
+@media only screen and (max-width: 992px) {
+    @include Screen(Large)
+
+  }
+
+
+//This is for Medium
+@media only screen and (max-width: 768px) {
+    @include Screen(Medium)
+
+  }
+
+// This is for Small
+
+@media only screen and(max-width:576px){
+  @include Screen(Small)
+}
+

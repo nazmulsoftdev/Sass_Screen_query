@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #dff9fb;
+}
+
+.Card-wrapper {
+  width: 400px;
+  height: 200px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#051937), color-stop(#004d7a), color-stop(#008793), color-stop(#00bf72), to(#a8eb12));
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1320px) {
+  .Card-wrapper {
+    width: 400px;
+    height: 200px;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#051937), color-stop(#004d7a), color-stop(#008793), color-stop(#00bf72), to(#a8eb12));
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .Card-wrapper {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#051937), color-stop(#3b225a), color-stop(#7e1667), color-stop(#bf0058), to(#eb122e));
+    background-image: linear-gradient(to right top, #051937, #3b225a, #7e1667, #bf0058, #eb122e);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Card-wrapper {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#052137), color-stop(#002c68), color-stop(#00339a), color-stop(#0031c7), to(#2512eb));
+    background-image: linear-gradient(to right top, #052137, #002c68, #00339a, #0031c7, #2512eb);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Card-wrapper {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eeff39), color-stop(#00f486), color-stop(#00d7da), color-stop(#00afff), to(#127aeb));
+    background-image: linear-gradient(to bottom, #eeff39, #00f486, #00d7da, #00afff, #127aeb);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .Card-wrapper {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#e50a87), color-stop(#ec3250), color-stop(#da5e1e), color-stop(#b88000), color-stop(#8c9800), color-stop(#75a82a), color-stop(#54b74d), color-stop(#00c472), color-stop(#00d395), color-stop(#13e1b7), color-stop(#3aeed5), to(#5ffbf1));
+    background-image: linear-gradient(to left top, #e50a87, #ec3250, #da5e1e, #b88000, #8c9800, #75a82a, #54b74d, #00c472, #00d395, #13e1b7, #3aeed5, #5ffbf1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
